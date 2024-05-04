@@ -22,6 +22,7 @@ const User = new mongoose.model("User", userSchema);
 const app = express();
 const port = process.env.PORT;
 const saltround=10;
+app.set('view engine', 'ejs');
 
 
 app.use(
